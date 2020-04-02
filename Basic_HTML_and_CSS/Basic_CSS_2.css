@@ -1,0 +1,11 @@
+p {
+	color: red;
+	background: yellow;
+	font-style: underline;
+	text-align: center;
+}
+
+h1 {
+	color: #191970;
+	text-shadow: 4px 4px #228B22;
+}
