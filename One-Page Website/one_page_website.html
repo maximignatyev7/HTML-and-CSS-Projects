@@ -8,29 +8,97 @@
 	<body>
 	
 		<!-- NAV -->
-			<ul>
-				<a href="#home" id="link"><li>HOME</li></a>
-				<a href="#pictures"><li>PICTURES</li></a>
-				<a href="#videos"><li>VIDEOS</li></a>
-				<a href="#contacts"><li>CONTACTS</li></a>
-			</ul>
+		<div class="navbar">
+				<a href="#home" id="link">HOME</a>
+				<a href="#pictures">PICTURES</a>
+				<a href="#videos">VIDEOS</a>
+				<a href="#contacts">CONTACTS</a>
+		</div>
 		<!-- END NAV -->
 		
 		<!-- HOME -->
-			<div id="home">
-				<h1>THE BEST SOCCER PLAYER</h1>
-			</div>
+		<div id="home">
+			<h1>THE BEST SOCCER PLAYER</h1>
+		</div>
 		<!-- END HOME -->
 		
 		<!-- PICTURES -->
-			<div id="pictures">
-				<div class="photo">
-					<img src="./images/Messi_1.jpg">
-					<img src="./images/Messi_2.jpg">
-					<img src="./images/Messi_3.jpg">
+		<div class="row">
+
+			<div class="column">
+				<div id="pictures">
+					<div class="photo">
+						<img src="./images/Messi_1.jpg" style="width:100%" onclick="openModal();currentSlide(1)"
+							class="hover-shadow cursor">
+					</div>
 				</div>
 			</div>
+
+			<div class="column">
+				<div id="pictures">
+					<div class="photo">
+						<img src="./images/Messi_2.jpg" style="width:100%" onclick="openModal();currentSlide(1)"
+							class="hover-shadow cursor">
+					</div>
+				</div>
+			</div>
+
+			<div class="column">
+				<div id="pictures">
+					<div class="photo">
+						<img src="./images/Messi_3.jpg" style="width:100%" onclick="openModal();currentSlide(1)"
+							class="hover-shadow cursor">
+					</div>
+				</div>
+			</div>
+
+
+		</div>
 		<!-- END PICTURES -->
+
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+
+				<div class="mySlides">
+					<div class="numbertext">1 / 3</div>
+					<img src="./images/Messi_1.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">2 / 3</div>
+					<img src="./images/Messi_2.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">3 / 3</div>
+					<img src="./images/Messi_3.jpg" style="width:100%">
+				</div>
+
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				<div class="caption-container">
+					<p id="caption"></p>
+				</div>
+
+				<div class="column">
+					<img class="demo-cursor" src="./images/Messi_1.jpg" style="width:100%"
+						onclick="currentSlide(1)" alt="Leonel's signature">
+				</div>
+
+				<div class="column">
+					<img class="demo-cursor" src="./images/Messi_2.jpg" style="width:100%"
+						onclick="currentSlide(2)" alt="Golden Ball Award">
+				</div>
+
+				<div class="column">
+					<img class="demo-cursor" src="./images/Messi_3.jpg" style="width:100%"
+						onclick="currentSlide(3)" alt="Celebrating goal...">
+				</div>
+			</div>
+
+		</div>
 		
 		<!-- VIDEOS -->
 			<div id="videos">
@@ -61,6 +129,6 @@
 				<h4>www.thebestsoccerplayer.soccer &nbsp;|&nbsp; &copy; 2020</h4>
 			</div>
 		<!-- END FOOTER -->
-		
+	<script src="./JS/one_page_website.js"></script>	
 	</body>
 </html>
